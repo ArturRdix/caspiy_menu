@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caspiy</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="./img/casp_ico.ico" type="image/x-icon">
+    <meta name="theme-color" content="#003214">
+    <link fetchPriority="low" rel="stylesheet" href="/CSS/background.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <div class="header-nav-wrapper">
+                <a href="/" class="header__nav-logo">
+                    <h1>CASPIY</h1>
+                </a>
+                <div id="burgerMenu" class="burger-menu">
+                    <span class="middle-line"></span>
+                </div>
+                <div id="navMenu" class="header__nav-menu">
+                    <h2><a href="#snacks">Закуски</a></h2>
+                    <h2><a href="#salats">Салати</a></h2>
+                    <h2><a href="#mainDish">Основні страви</a></h2>
+                    <h2><a href="#grillDish">Страви на мангалі</a></h2>
+                    <h2><a href="#fristDish">Перші страви</a></h2>
+                    <h2><a href="#garnier">Гарніри соуси</a></h2>
+                    <h2><a href="#deserts">Десерти</a></h2>
+                    <h2><a href="#hotDrinks">Гарячі напої</a></h2>
+                    <h2><a href="#iceDrinks">Холодні напої</a></h2>
+                    <h2><a href="#kids">Дитяче меню</a></h2>
+                    <h2><a href="#alcoCockt">Алкогольні коктейлі</a></h2>
+                    <h2><a href="#vineCard">Винна карта</a></h2>
+                    <h2><a href="#alcohol">Алкогольні напої</a></h2>
+                    <h2><a href="#hookah">Кальян</a></h2>
+                    <h2><a href="#other">Інше</a></h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Холодні закуски-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg hot-snack"></div>
+            <div class="main-text-menu">
+                <div id="firstHead" class="wrapper-name heading">
+                    <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/main-pattern-top.png"
+                        alt="pattern">
+                    <h2 id="snacks">Закуски</h2>
+                    <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/main-pattern-bottom.png"
+                        alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/sub-pattern-top.png"
+                        alt="pattern">
+                    <h3>Холодні закуски</h3>
+                    <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/sub-pattern-bottom.png"
+                        alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-IceSnack">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg hot-snack"></div>
+        </div>
+    </section>
+
+    <!--Гарячі закуски-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg ice-snack"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Гарячі закуски</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-HotSnack">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg ice-snack"></div>
+        </div>
+    </section>
+
+    <!--Салати-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg salat"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="salats">Салати</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Salat">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg salat"></div>
+        </div>
+    </section>
+
+    <!--Основні страви-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg main-dishes"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="mainDish">Основні страви</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-MainDisnhes">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg main-dishes"></div>
+        </div>
+    </section>
+
+    <!--Страви на мангалі-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg grill"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="grillDish">Страви на мангалі</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-GrillDishes">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg grill"></div>
+        </div>
+    </section>
+
+    <!--Перші страви-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg firstDish"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="fristDish">Перші страви</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-FirstDishes">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg firstDish"></div>
+        </div>
+    </section>
+
+    <!--Гарніри соуси-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg garnier"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="garnier">Гарніри соуси</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Гарніри</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Garnier">
+                    </tbody>
+                </table>
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Соуси</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Souse">
+                    </tbody>
+                </table>
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Хліб</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Bread">
+                    </tbody>
+                </table>
+            </div>
+            <div class="rigt-bg garnier"></div>
+        </div>
+    </section>
+
+    <!--Десерти-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg desert"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="deserts">Десерти</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Deserts">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg desert"></div>
+        </div>
+    </section>
+
+    <!--Гарячі напої-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg hot-drink"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="hotDrinks">Гарячі напої</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Кава</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Coffee">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Чай</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Tea">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg hot-drink"></div>
+        </div>
+    </section>
+
+    <!--Холодні напої-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg ice-drink"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="iceDrinks">Холодні напої</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-IceDrink">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Безалкогольні коктейлі</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-ZeroCocktail">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg ice-drink"></div>
+        </div>
+    </section>
+
+    <!--Дитяче Меню-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg kids"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="kids">Дитяче меню</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Kids">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg kids"></div>
+        </div>
+    </section>
+
+    <!--Алкогольні коктейлі-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg alco-cockt"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="alcoCockt">Алкогольні коктейлі</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-AlcoCockt">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg alco-cockt"></div>
+        </div>
+    </section>
+
+    <!--Винна карта/Ігристі-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg vine-one"></div>
+            <div class="main-text-menu">
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="vineCard">Винна карта</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Ігристі вина</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-FizzyVine">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg vine-one"></div>
+        </div>
+    </section>
+
+    <!--Винна білі/Рожеві/Червоні-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg vine-two"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Вина білі</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-WhiteVine">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Рожеві вина</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-PinkVine">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Червоні вина</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-RedVine">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg vine-two"></div>
+        </div>
+    </section>
+
+    <!--Алкогольні Напої-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg alco-one"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="alcohol">Алкогольні Напої</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Вермути</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Vermut">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Лікери</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Licker">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Ром</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Rome">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Джин</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Jin">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg alco-one"></div>
+        </div>
+    </section>
+
+    <!--Алкогольні Напої 2-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg alco-two"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Віскі</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Whiskey">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Коньяк/Бренді</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Brandi">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg alco-two"></div>
+        </div>
+    </section>
+
+    <!--Алкогольні Напої 3-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg alco-three"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Горліка</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Vodka">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Текіла</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Tequila">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Пиво</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Назва страви</th>
+                            <th>Вихід, Грам</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Beer">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="rigt-bg alco-three"></div>
+        </div>
+    </section>
+
+    <!--Кальяни-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg hookah"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="hookah">Кальяни</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Найменування</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Hookah">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Добавки</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Найменування</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-OtherHookah">
+                    </tbody>
+                </table>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Фруктові чаші</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Найменування</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-FruitDop">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="rigt-bg hookah"></div>
+    </section>
+
+    <!--Інше-->
+    <section class="menu-list">
+        <div class="row-menu-items">
+            <div class="left-bg other"></div>
+            <div class="main-text-menu">
+
+                <div class="wrapper-name heading">
+                    <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
+                    <h2 id="other">Інше</h2>
+                    <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <h3 class="other-h3">
+                        Обслуговування
+                        альтанок і зони біля басейну -
+                        10% від суми замовлення.
+                    </h3>
+                </div>
+
+                <div class="wrapper-name sub-heading">
+                    <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
+                    <h3>Бій посуду</h3>
+                    <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
+                </div>
+
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th>Найменування</th>
+                            <th>Ціна, грн</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-body-Oter">
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="rigt-bg other"></div>
+    </section>
+</body>
+
+
+<script src="./MenuData/menuData.js"></script>
+<script src="./js/scrollEvent.js"></script>
+<script src="./MenuData/menuItems.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const headerHeight = document.getElementById('header').offsetHeight;
+    const h3Element = document.getElementById('firstHead');
+    h3Element.style.marginTop = `${parseInt(headerHeight)+80}` + 'px';
+});
+
+    const navMenu = document.getElementById('navMenu');
+    const burgerMenu = document.getElementById('burgerMenu');
+
+    burgerMenu.classList.add('active');
+    navMenu.classList.add('active');
+
+    burgerMenu.addEventListener('click', function () {
+        burgerMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+
+    for (const key in menuItems) {
+        const menuBody = document.getElementById(`menu-body-${key}`);
+        if (menuBody) {
+            renderingItems(menuItems[key], menuBody);
+        }
+    }
+
+    function renderingItems(menuItem, menuBody) {
+        menuItem.forEach(function (item) {
+            const row = document.createElement("tr");
+            if (!item.weight && item.description) {
+                row.innerHTML = `
+                <td class="menu-item-name">${item.name}<br><span class="description">${item.description}</td>
+                <td class="menu-item-price">${item.price}</td>
+            `}
+            else if (!item.weight) {
+                row.innerHTML = `
+                <td class="menu-item-name">${item.name}</td>
+                <td class="menu-item-price">${item.price}</td>
+            `}
+            else if (item.description) {
+                row.innerHTML = `
+                <td class="menu-item-name">${item.name}<br><span class="description">${item.description}</span></td>
+                <td class="menu-item-weight">${item.weight}</td>
+                <td class="menu-item-price">${item.price}</td>
+            `;
+            } else {
+                row.innerHTML = `
+                <td class="menu-item-name">${item.name}</td>
+                <td class="menu-item-weight">${item.weight}</td>
+                <td class="menu-item-price">${item.price}</td>
+            `;
+            }
+            menuBody.appendChild(row);
+        });
+    }
+</script>
+
+</html>
