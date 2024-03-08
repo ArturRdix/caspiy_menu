@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caspiy</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="./img/casp_ico.ico" type="image/x-icon">
     <meta name="theme-color" content="#003214">
-    <link fetchPriority="low" rel="stylesheet" href="/CSS/background.css">
+
+    <!-- Open Graph метаданные -->
+    <meta property="og:title" content="Парк-готель «CASPIY»">
+    <meta property="og:description"
+        content="Парк-готель «CASPIY» - ідеальне місце для відпочинку та розваг. У нас є кафе зі смачними стравами, басейн, а також затишні домики для проживання. Приємний відпочинок гарантований!">
+    <meta property="og:image" content="https://caspiy.com.ua/img/og-image.jpg">
+    <meta property="og:url" content="https://caspiy.com.ua/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="Парк-готель Каспій">
+
+    <!-- Метаданные для Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Парк-готель «CASPIY»">
+    <meta name="twitter:description"
+        content="Парк-готель «CASPIY» - ідеальне місце для відпочинку та розваг. У нас є кафе зі смачними стравами, басейн, а також затишні домики для проживання. Приємний відпочинок гарантований!">
+    <meta name="twitter:image" content="https://caspiy.com.ua/img/og-image.jpg">
+
+    <!-- Другі метадані -->
+    <meta name="description"
+        content="Парк-готель «CASPIY» - ідеальне місце для відпочинку та розваг. У нас є кафе зі смачними стравами, басейн, а також затишні домики для проживання. Приємний відпочинок гарантований!">
+    <meta name="keywords" content="Парк-готель, Caspiy, Каспій, П'ятихатки, відпочинок, басейн, кафе, домики">
+
 </head>
 
 <body>
@@ -46,7 +68,6 @@
     <!--Холодні закуски-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg hot-snack"></div>
             <div class="main-text-menu">
                 <div id="firstHead" class="wrapper-name heading">
                     <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/main-pattern-top.png"
@@ -55,7 +76,6 @@
                     <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/main-pattern-bottom.png"
                         alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img loading="lazy" fetchPriority="low" class="main-pattern-img" src="./img/sub-pattern-top.png"
                         alt="pattern">
@@ -74,17 +94,6 @@
                     <tbody id="menu-body-IceSnack">
                     </tbody>
                 </table>
-            </div>
-            <div class="rigt-bg hot-snack"></div>
-        </div>
-    </section>
-
-    <!--Гарячі закуски-->
-    <section class="menu-list">
-        <div class="row-menu-items">
-            <div class="left-bg ice-snack"></div>
-            <div class="main-text-menu">
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Гарячі закуски</h3>
@@ -102,16 +111,14 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg ice-snack"></div>
+
         </div>
     </section>
 
     <!--Салати-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg salat"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="salats">Салати</h2>
@@ -129,16 +136,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg salat"></div>
         </div>
     </section>
 
     <!--Основні страви-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg main-dishes"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="mainDish">Основні страви</h2>
@@ -156,16 +160,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg main-dishes"></div>
         </div>
     </section>
 
     <!--Страви на мангалі-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg grill"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="grillDish">Страви на мангалі</h2>
@@ -183,16 +184,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg grill"></div>
         </div>
     </section>
 
     <!--Перші страви-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg firstDish"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="fristDish">Перші страви</h2>
@@ -210,21 +208,18 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg firstDish"></div>
         </div>
     </section>
 
     <!--Гарніри соуси-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg garnier"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="garnier">Гарніри соуси</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Гарніри</h3>
@@ -274,14 +269,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rigt-bg garnier"></div>
         </div>
     </section>
 
     <!--Десерти-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg desert"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
@@ -301,21 +294,18 @@
                 </table>
 
             </div>
-            <div class="rigt-bg desert"></div>
         </div>
     </section>
 
     <!--Гарячі напої-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg hot-drink"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="hotDrinks">Гарячі напої</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Кава</h3>
@@ -332,7 +322,6 @@
                     <tbody id="menu-body-Coffee">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Чай</h3>
@@ -349,16 +338,13 @@
                     <tbody id="menu-body-Tea">
                     </tbody>
                 </table>
-
             </div>
-            <div class="rigt-bg hot-drink"></div>
         </div>
     </section>
 
     <!--Холодні напої-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg ice-drink"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
@@ -376,7 +362,6 @@
                     <tbody id="menu-body-IceDrink">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Безалкогольні коктейлі</h3>
@@ -395,21 +380,19 @@
                 </table>
 
             </div>
-            <div class="rigt-bg ice-drink"></div>
+
         </div>
     </section>
 
     <!--Дитяче Меню-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg kids"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="kids">Дитяче меню</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -421,23 +404,19 @@
                     <tbody id="menu-body-Kids">
                     </tbody>
                 </table>
-
             </div>
-            <div class="rigt-bg kids"></div>
         </div>
     </section>
 
     <!--Алкогольні коктейлі-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg alco-cockt"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="alcoCockt">Алкогольні коктейлі</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -449,23 +428,19 @@
                     <tbody id="menu-body-AlcoCockt">
                     </tbody>
                 </table>
-
             </div>
-            <div class="rigt-bg alco-cockt"></div>
         </div>
     </section>
 
     <!--Винна карта/Ігристі-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg vine-one"></div>
             <div class="main-text-menu">
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="vineCard">Винна карта</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Ігристі вина</h3>
@@ -482,18 +457,6 @@
                     <tbody id="menu-body-FizzyVine">
                     </tbody>
                 </table>
-
-            </div>
-            <div class="rigt-bg vine-one"></div>
-        </div>
-    </section>
-
-    <!--Винна білі/Рожеві/Червоні-->
-    <section class="menu-list">
-        <div class="row-menu-items">
-            <div class="left-bg vine-two"></div>
-            <div class="main-text-menu">
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Вина білі</h3>
@@ -510,7 +473,6 @@
                     <tbody id="menu-body-WhiteVine">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Рожеві вина</h3>
@@ -527,7 +489,6 @@
                     <tbody id="menu-body-PinkVine">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Червоні вина</h3>
@@ -544,30 +505,24 @@
                     <tbody id="menu-body-RedVine">
                     </tbody>
                 </table>
-
             </div>
-            <div class="rigt-bg vine-two"></div>
         </div>
     </section>
 
     <!--Алкогольні Напої-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg alco-one"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="alcohol">Алкогольні Напої</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Вермути</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -579,13 +534,11 @@
                     <tbody id="menu-body-Vermut">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Лікери</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -597,13 +550,11 @@
                     <tbody id="menu-body-Licker">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Ром</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -615,13 +566,11 @@
                     <tbody id="menu-body-Rome">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Джин</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -633,24 +582,11 @@
                     <tbody id="menu-body-Jin">
                     </tbody>
                 </table>
-
-            </div>
-            <div class="rigt-bg alco-one"></div>
-        </div>
-    </section>
-
-    <!--Алкогольні Напої 2-->
-    <section class="menu-list">
-        <div class="row-menu-items">
-            <div class="left-bg alco-two"></div>
-            <div class="main-text-menu">
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Віскі</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -662,13 +598,11 @@
                     <tbody id="menu-body-Whiskey">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Коньяк/Бренді</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -680,24 +614,11 @@
                     <tbody id="menu-body-Brandi">
                     </tbody>
                 </table>
-
-            </div>
-            <div class="rigt-bg alco-two"></div>
-        </div>
-    </section>
-
-    <!--Алкогольні Напої 3-->
-    <section class="menu-list">
-        <div class="row-menu-items">
-            <div class="left-bg alco-three"></div>
-            <div class="main-text-menu">
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Горліка</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -709,13 +630,11 @@
                     <tbody id="menu-body-Vodka">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Текіла</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -727,13 +646,11 @@
                     <tbody id="menu-body-Tequila">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Пиво</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -747,22 +664,19 @@
                 </table>
 
             </div>
-            <div class="rigt-bg alco-three"></div>
+
         </div>
     </section>
 
     <!--Кальяни-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg hookah"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="hookah">Кальяни</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -773,13 +687,11 @@
                     <tbody id="menu-body-Hookah">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Добавки</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -790,13 +702,11 @@
                     <tbody id="menu-body-OtherHookah">
                     </tbody>
                 </table>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Фруктові чаші</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -808,22 +718,17 @@
                     </tbody>
                 </table>
             </div>
-
-            <div class="rigt-bg hookah"></div>
     </section>
 
     <!--Інше-->
     <section class="menu-list">
         <div class="row-menu-items">
-            <div class="left-bg other"></div>
             <div class="main-text-menu">
-
                 <div class="wrapper-name heading">
                     <img class="main-pattern-img" src="./img/main-pattern-top.png" alt="pattern">
                     <h2 id="other">Інше</h2>
                     <img class="main-pattern-img" src="./img/main-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <h3 class="other-h3">
                         Обслуговування
@@ -831,13 +736,11 @@
                         10% від суми замовлення.
                     </h3>
                 </div>
-
                 <div class="wrapper-name sub-heading">
                     <img class="main-pattern-img" src="./img/sub-pattern-top.png" alt="pattern">
                     <h3>Бій посуду</h3>
                     <img class="main-pattern-img" src="./img/sub-pattern-bottom.png" alt="pattern">
                 </div>
-
                 <table class="menu">
                     <thead>
                         <tr>
@@ -848,10 +751,7 @@
                     <tbody id="menu-body-Oter">
                     </tbody>
                 </table>
-
             </div>
-
-            <div class="rigt-bg other"></div>
     </section>
 </body>
 
@@ -860,11 +760,11 @@
 <script src="./js/scrollEvent.js"></script>
 <script src="./MenuData/menuItems.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const headerHeight = document.getElementById('header').offsetHeight;
-    const h3Element = document.getElementById('firstHead');
-    h3Element.style.marginTop = `${parseInt(headerHeight)+80}` + 'px';
-});
+    document.addEventListener('DOMContentLoaded', function () {
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const h3Element = document.getElementById('firstHead');
+        h3Element.style.marginTop = `${parseInt(headerHeight) + 80}` + 'px';
+    });
 
     const navMenu = document.getElementById('navMenu');
     const burgerMenu = document.getElementById('burgerMenu');

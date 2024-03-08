@@ -1,17 +1,26 @@
 function scrollHandler() {
-    const sections = document.querySelectorAll('.menu-list');//wrapper-name.heading h2
+    let sectionH2s = document.querySelectorAll('.wrapper-name.heading h2');
     const navLinks = document.querySelectorAll('.header__nav-menu h2 a');
-    const offset = 20; // Количество пикселей для коррекции
+    const offset = 170; // Количество пикселей для коррекции
+
+    let sections = Array.from(sectionH2s)
+        .map(h2 => h2.closest('.menu-list'))
+        .map((section, index, array) => ({
+            section: section,
+            height: index < array.length - 1 ? (array[index + 1].offsetTop - section.offsetTop) : section.offsetHeight,
+        }));
+
 
     sections.forEach(function (section) {
-        const top = section.offsetTop - offset;
-        const bottom = top + section.offsetHeight + offset;
+        const top = section.section.offsetTop - offset;
+        const bottom = top + section.height + offset;
 
         if (window.scrollY >= top && window.scrollY < bottom) {
             navLinks.forEach(function (link) {
                 link.classList.remove('active');
             });
-            const correspondingLink = document.querySelector('.header__nav-menu h2 a[href="#' + section.id + '"]');
+            const h2 = section.section.querySelector('.wrapper-name.heading h2');
+            const correspondingLink = document.querySelector('.header__nav-menu h2 a[href="#' + h2.id + '"]');
             if (correspondingLink) {
                 correspondingLink.classList.add('active');
             }
@@ -20,13 +29,12 @@ function scrollHandler() {
 
     const activeNavLink = document.querySelector('.header__nav-menu h2 a.active');
     if (activeNavLink) {
-        setTimeout(function() {
-            activeNavLink.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        }, 100); 
+        setTimeout(function () {
+            activeNavLink.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+        }, 100);
     }
-    
-}
 
+}
 const links = document.querySelectorAll('a[href^="#"]');
 links.forEach(link => {
     link.addEventListener('click', function (e) {

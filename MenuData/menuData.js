@@ -471,22 +471,22 @@ const menuCoffee = [
     {
         name: "«Американо»",
         weight: "120",
-        price: "35"
+        price: "50"
     },
     {
         name: "«Американо» з молоком",
         weight: "170",
-        price: "40"
+        price: "60"
     },
     {
         name: "Глясе",
         weight: "200",
-        price: "50"
+        price: "70"
     },
     {
         name: "Еспресо",
         weight: "30",
-        price: "30"
+        price: "40"
     },
     {
         name: "Еспресо допіо",
@@ -506,7 +506,7 @@ const menuCoffee = [
     {
         name: "Еспресо ристрето",
         weight: "15",
-        price: "30"
+        price: "40"
     },
     {
         name: "Еспресо актив",
@@ -516,44 +516,54 @@ const menuCoffee = [
     {
         name: "Кава по-віденськи",
         weight: "175",
-        price: "50"
+        price: "70"
     },
     {
         name: "Капучино",
         weight: "90",
-        price: "45"
+        price: "70"
     },
     {
         name: "Лате",
         weight: "180",
-        price: "50"
+        price: "70"
     },
     {
         name: "Мегакапучино",
         weight: "180",
-        price: "50"
+        price: "70"
     },
     {
         name: "Мокачино",
         weight: "200",
-        price: "50"
+        price: "70"
+    },
+    {
+        name: "Раф-кофе «Білий шоколад»",
+        weight: "200",
+        price: "80"
+    },
+    {
+        name: "Раф-кофе «Карамельд»",
+        weight: "200",
+        price: "80"
     },
     {
         name: "Гарячий шоколад",
         weight: "150",
-        price: "40"
+        price: "60"
     }
 ];
 const menuTea = [
     {
         name: "По-східному",
         weight: "180",
-        price: "30"
+        price: "50"
     },
     {
         name: "Чорний / зелений",
         weight: "500",
-        price: "40"
+        price: "60"
     },
     {
         name: "Трав'яний / фруктовий",
@@ -579,7 +589,7 @@ const menuTea = [
         name: "Чай фірмовий",
         description: "«Каспій»",
         weight: "1 л",
-        price: "150"
+        price: "200"
     },
 ];
 
@@ -588,44 +598,55 @@ const menuIceDrink = [
     {
         name: "Вода Borjomi",
         weight: "0,5 л",
-        price: "40"
+        price: "100"
+    },
+    {
+        name: "Вода Borjomi",
+        weight: "0,33 л",
+        price: "70"
     },
     {
         name: "Вода Моршинська",
         description: "н/г, с/г",
         weight: "0,5 л",
-        price: "30"
+        price: "50"
     },
     {
-        name: "Pepsi",
+        name: "Вода Моршинська",
+        description: "н/г, с/г",
         weight: "0,33 л",
-        price: "20"
+        price: "50"
     },
     {
-        name: "Coca-Cola, Fanta, Sprite",
-        weight: "0,25 л",
-        price: "20"
+        name: "Coca-Cola, Fanta, Sprite,Pepsi",
+        weight: "жб 0,33 л",
+        price: "40"
+    },
+    {
+        name: "Coca-Cola, Fanta, Sprite,Pepsi",
+        weight: "скло 0,25 л",
+        price: "50"
     },
     {
         name: "Сік «Сандора»",
         weight: "1 л",
-        price: "50"
+        price: "100"
     },
     {
         name: "Компот",
         weight: "1 л",
-        price: "45"
+        price: "120"
     },
     {
         name: "Узвар",
         weight: "1 л",
-        price: "40"
+        price: "120"
     },
     {
         name: "Фреш",
         description: "на вибір: яблуко / селера / грейпфрут / морква / апельсин",
         weight: "300",
-        price: "80"
+        price: "140"
     },
     {
         name: "Смузі",
@@ -638,32 +659,37 @@ const menuZeroCocktail = [
     {
         name: "Молочний коктейль",
         weight: "270",
-        price: "50"
+        price: "100"
     },
     {
         name: "Оригінальний лимонад",
         weight: "450",
-        price: "55"
+        price: "100"
     },
     {
         name: "Мохіто",
         weight: "400",
-        price: "80"
+        price: "120"
     },
     {
         name: "Тропічний сік",
         weight: "450",
-        price: "50"
+        price: "80"
     },
     {
         name: "Том і Джері",
         weight: "400",
-        price: "70"
+        price: "100"
     },
     {
         name: "Крейзі манкі",
         weight: "450",
-        price: "85"
+        price: "110"
+    },
+    {
+        name: "Смузі ягідний ",
+        weight: "400",
+        price: "120"
     }
 ];
 
@@ -722,64 +748,74 @@ const menuAlcoCockt = [
         name: "Апероль Шприц",
         description: "сухе ігристе вино, Aperol, апельсин",
         weight: "0,250",
-        price: "120"
+        price: "190"
     },
     {
         name: "Банановий дайкірі",
         description: "ром, лікер, банановий сік",
         weight: "0,200",
-        price: "120"
+        price: "190"
     },
     {
         name: "Блакитна лагуна",
         description: "горілка, лікер, апельсиновий сік, спрайт",
         weight: "0,300",
-        price: "100"
+        price: "160"
     },
     {
         name: "Маргарита Динна",
         description: "текіла, лікер, лимонний сік, лайм",
         weight: "0,150",
-        price: "130"
+        price: "200"
     },
     {
         name: "Секс на пляжі",
         description: "горілка, лікери, апельсиновий сік, морс",
         weight: "0,300",
-        price: "110"
+        price: "190"
     },
     {
         name: "Сієста",
         description: "текіла, лікер, лимонний сік",
         weight: "0,150",
-        price: "130"
+        price: "190"
     },
     {
         name: "Сік джунглів",
         description: "джин, лікер, лимонний сік, апельсиновий сік",
         weight: "0,250",
-        price: "120"
+        price: "180"
     },
     {
         name: "Мохіто",
         description: "ром, тростинний сироп, спрайт, лайм, м’ята",
         weight: "0,400",
-        price: "120"
+        price: "180"
     },
     {
         name: "Джин з тоніком",
         weight: "0,250",
-        price: "90"
+        price: "150"
     },
     {
         name: "Віскі-кола",
         weight: "0,250",
-        price: "80"
+        price: "150"
     },
     {
         name: "Вільна куба",
         description: "ром, кола",
         weight: "0,250",
+        price: "150"
+    },
+    {
+        name: "Б-52",
+        weight: "60",
+        price: "100"
+    },
+    {
+        name: "Зелений мексиканець",
+        weight: "50",
         price: "80"
     }
 ];
@@ -789,44 +825,56 @@ const menuAlcoCockt = [
 const menuFizzyVine = [
     {
         name: "Fragolino Sarsitano",
-        description: "Rosso/Bianco солодке, (Італія)",
+        description: "Rosso біле/Bianco солодке, (Італія)",
         weight: "1 пл.",
-        price: "160"
+        price: "250"
     },
     {
         name: "Lambrusco Dell`Emilia Fiore",
         description: "напівсолодке (Італія)",
         weight: "1 пл.",
-        price: "170"
+        price: "250"
     },
     {
         name: "Французький бульвар",
         description: " «Special Edition» напівсухе, напівсололке, солодке",
         weight: "1 пл.",
-        price: "210"
+        price: "250"
     },
     {
-        name: "Don Luciano",
-        description: "солодке біле, рожеве, лаванда (Італія)",
-        weight: "1 пл.",
-        price: "210"
-    },
-    {
-        name: "CAVA Masia de la Luz",
+        name: "CAVA Palau",
         description: "брют (Іспанія)",
         weight: "1 пл.",
-        price: "420"
+        price: "500"
     },
     {
         name: "Рокка Россо Просекко",
         description: "(Італія)",
         weight: "1 пл.",
-        price: "470"
+        price: "600"
+    },
+    {
+        name: "Santa Chiara Просекко",
+        description: "(Італія)",
+        weight: "1 пл.",
+        price: "600"
+    },
+    {
+        name: "Contessa Chiara Асті",
+        description: "(Італія)",
+        weight: "1 пл.",
+        price: "550"
+    },
+    {
+        name: "Docs 8 Asti",
+        description: "(Італія)",
+        weight: "1 пл.",
+        price: "500"
     },
     {
         name: "Мартіні Просекко/Асті",
         weight: "1 пл.",
-        price: "500"
+        price: "750"
     }
 ];
 //Вина білі
@@ -835,31 +883,49 @@ const menuWhiteVine = [
         name: "Шевальє де П’єр Бланк",
         description: "сухе/напівсолодке (Франція)",
         weight: "100",
-        price: "32"
+        price: "40"
     },
     {
         name: "Цинандалі",
         description: "сухе (Грузія)",
         weight: "100",
-        price: "41"
+        price: "60"
     },
     {
         name: "Гаві Аврора",
         description: "сухе (Італія)",
         weight: "100",
-        price: "88"
+        price: "90"
     },
     {
         name: "Алазані",
         description: "напівсолодке (Грузія)",
         weight: "100",
-        price: "37"
+        price: "50"
     },
     {
         name: "Ріоджа Кастиліо",
         description: "сухе/напівсолодке (Іспанія)",
         weight: "100",
-        price: "47"
+        price: "60"
+    },
+    {
+        name: "Піно Гріджио",
+        description: "сухе (Італія)",
+        weight: "100",
+        price: "50"
+    },
+    {
+        name: "Верментіно Монталто",
+        description: "сухе",
+        weight: "100",
+        price: "50"
+    },
+    {
+        name: "Vinho Verde",
+        description: "сухе/напівсолодке (Іспанія)",
+        weight: "100",
+        price: "40"
     }
 ];
 //Рожеві вина
@@ -868,13 +934,13 @@ const menuPinkVine = [
         name: "Піно Гріджио",
         description: "сухе (Італія)",
         weight: "100",
-        price: "43"
+        price: "60"
     },
     {
         name: "Домен Пельо",
         description: "сухе (Франція)",
         weight: "100",
-        price: "63"
+        price: "70"
     }
 ];
 //Червоні вина
@@ -883,49 +949,61 @@ const menuRedVine = [
         name: "Шевальє де П’єр Бланк",
         description: "сухе/напівсолодке (Франція)",
         weight: "100",
-        price: "32"
+        price: "40"
     },
     {
         name: "Namaqua",
         description: "сухе (ПАР)",
         weight: "100",
-        price: "34"
+        price: "60"
     },
     {
         name: "Монтепульчано",
         description: "сухе (Італія)",
         weight: "100",
-        price: "39"
-    },
-    {
-        name: "Сапераві",
-        description: "сухе (Грузія)",
-        weight: "100",
-        price: "43"
-    },
-    {
-        name: "Мукузані",
-        description: "сухе (Грузія)",
-        weight: "100",
-        price: "54"
+        price: "40"
     },
     {
         name: "Ріоджа Кастиліо",
         description: "сухе/напівсолодке (Іспанія)",
         weight: "100",
-        price: "47"
+        price: "60"
     },
     {
         name: "Алазані",
         description: "напівсолодке (Грузія)",
         weight: "100",
-        price: "37"
+        price: "50"
+    },
+    {
+        name: "Сапераві",
+        description: "сухе (Грузія)",
+        weight: "100",
+        price: "50"
+    },
+    {
+        name: "Мукузані",
+        description: "сухе (Грузія)",
+        weight: "100",
+        price: "60"
+    },
+    {
+        name: "Мукузані",
+        description: "сухе (Грузія)",
+        weight: "100",
+        price: "60"
     },
     {
         name: "Кінзмараулі",
         description: "напівсолодке (Грузія)",
         weight: "100",
         price: "60"
+    },
+    {
+        name: "Кінзмараулі",
+        description: "напівсолодке (Грузія)",
+        weight: "100",
+        price: "140"
     }
 ];
 
@@ -935,12 +1013,17 @@ const menuVermut = [
     {
         name: "Мартіні Россо",
         weight: "100",
-        price: "45"
+        price: "60"
+    },
+    {
+        name: "Мартіні Россо Фіеро",
+        weight: "100",
+        price: "60"
     },
     {
         name: "Мартіні Б’янко",
         weight: "100",
-        price: "45"
+        price: "60"
     }
 ];
 //Лікери
@@ -948,22 +1031,37 @@ const menuLicker = [
     {
         name: "Becherovka",
         weight: "100",
-        price: "69"
+        price: "110"
     },
     {
         name: "Becherovka Lemond",
         weight: "100",
-        price: "62"
+        price: "100"
     },
     {
         name: "Jagermeister",
         weight: "100",
-        price: "110"
+        price: "140"
     },
     {
         name: "Baileys",
         weight: "100",
-        price: "133"
+        price: "160"
+    },
+    {
+        name: "Шерідан",
+        weight: "100",
+        price: "220"
+    },
+    {
+        name: "Лімончелло",
+        weight: "100",
+        price: "200"
+    },
+    {
+        name: "Лімончелло",
+        weight: "100",
+        price: "100"
     }
 ];
 //Ром
@@ -979,14 +1077,34 @@ const menuRome = [
         price: "81"
     },
     {
-        name: "Captain Morgan Gold/Dark",
+        name: "Bacardi Carta Spiced",
         weight: "100",
-        price: "100"
+        price: "81"
     },
     {
-        name: "Captain Morgan Spiced Black",
+        name: "Bacardi Oakheart Original",
+        weight: "100",
+        price: "81"
+    },
+    {
+        name: "Captain Morgan Black",
+        weight: "100",
+        price: "130"
+    },
+    {
+        name: "Captain Morgan White",
         weight: "100",
         price: "110"
+    },
+    {
+        name: "Captain Morgan Gold",
+        weight: "100",
+        price: "120"
+    },
+    {
+        name: "Captain Morgan Dark",
+        weight: "100",
+        price: "120"
     }
 ];
 //Джин
@@ -994,189 +1112,229 @@ const menuJin = [
     {
         name: "Beefeater",
         weight: "100",
-        price: "96"
+        price: "120"
     },
     {
-        name: "Beefeater Blood Orange/Pink",
+        name: "Beefeater",
+        description: "Blood Orange/Pink",
         weight: "100",
-        price: "105"
+        price: "120"
     },
     {
         name: "Bombay Sapphire",
         weight: "100",
-        price: "148"
+        price: "150"
+    },
+    {
+        name: "Gordon`s 37,5%",
+        weight: "100",
+        price: "150"
     }
 ];
 
 //Віскі
 const menuWhiskey = [
     {
+        name: "Jameson",
+        weight: "100",
+        price: "180"
+    },
+    {
+        name: "Джек Деніелс",
+        weight: "100",
+        price: "210"
+    },
+    {
         name: "Блек+Вайт",
         weight: "100",
-        price: "80"
+        price: "100"
     },
     {
         name: "Беллс",
         weight: "100",
-        price: "81"
+        price: "100"
     },
     {
-        name: "Глен Клайд",
+        name: "ВАТ 69",
+        weight: "100",
+        price: "90"
+    },
+    {
+        name: "Glen Clyde",
         weight: "100",
         price: "80"
     },
     {
         name: "Red Label",
         weight: "100",
-        price: "118"
+        price: "150"
     },
     {
         name: "Ballantine`s",
         weight: "100",
-        price: "100"
+        price: "150"
     },
     {
-        name: "Jameson",
+        name: "O`Brian",
         weight: "100",
-        price: "120"
+        price: "150"
     },
     {
         name: "Chivas Regal",
         description: "12 років",
         weight: "100",
-        price: "200"
+        price: "360"
     },
     {
         name: "Chivas Regal",        
         description: "18 років",
         weight: "100",
-        price: "450"
+        price: "600"
     }
 ];
 //Коньяк/Бренді
 const menuBrandi = [
     {
         name: "АрАрАт",
-        description: "3 роки",
+        description: "3★",
+        weight: "100",
+        price: "150"
+    },
+    {
+        name: "АрАрАт",
+        description: "5★",
+        weight: "100",
+        price: "190"
+    },
+    {
+        name: "Ужгород",
+        description: "3★",
         weight: "100",
         price: "80"
     },
     {
-        name: "АрАрАт",
-        description: "5 років",
+        name: "Orbeliani",
+        description: "3★",
         weight: "100",
-        price: "81"
+        price: "80"
     },
     {
-        name: "Ужгород",
-        description: "3 роки",
+        name: "Orbeliani",
+        description: "4★",
         weight: "100",
-        price: "100"
+        price: "80"
     },
     {
-        name: "Закарпатський",
-        description: "4 років",
+        name: "Orbeliani",
+        description: "5★",
         weight: "100",
-        price: "110"
+        price: "90"
     },
     {
-        name: "Таврія крафт колекшн",
-        description: "5 років",
+        name: "Аракс",
+        description: "3★",
         weight: "100",
-        price: "81"
+        price: "60"
     },
     {
-        name: "Таврія крафт колекшн",
-        description: "Пряний",
+        name: "Аракс",
+        description: "5★",
         weight: "100",
-        price: "100"
+        price: "90"
+    },
+    {
+        name: "Легенда Вірменії",
+        description: "3★",
+        weight: "100",
+        price: "70"
+    },
+    {
+        name: "Легенда Вірменії",
+        description: "5★",
+        weight: "100",
+        price: "90"
+    },
+    {
+        name: "Легенда Вірменії",
+        description: "10★",
+        weight: "100",
+        price: "140"
     },
     {
         name: "Колхида",
-        description: "3 роки",
+        description: "3★",
         weight: "100",
-        price: "110"
+        price: "70"
     },
     {
         name: "Колхида",
-        description: "5 років",
+        description: "5★",
         weight: "100",
-        price: "81"
+        price: "80"
     },
     {
         name: "Алекс",
-        description: "3 роки",
+        description: "3★",
         weight: "100",
         price: "100"
     },
     {
         name: "Алекс",
-        description: "5 років",
+        description: "5★",
         weight: "100",
         price: "110"
     },
     {
         name: "Martell VS",
         weight: "100",
-        price: "110"
+        price: "340"
+    },
+    {
+        name: "Martell VSOP",
+        weight: "100",
+        price: "560"
     },
     {
         name: "Hennessy VS",
         weight: "100",
-        price: "110"
+        price: "400"
     },
     {
         name: "Hennessy VSOP",
         weight: "100",
-        price: "110"
+        price: "720"
     }
 ];
 
 //Горліка
 const menuVodka = [
     {
-        name: "Свояк",
-        description: "стандарт/на березових бруньках",
-        weight: "100",
-        price: "30"
-    },
-    {
-        name: "Качине полювання",
-        weight: "100",
-        price: "30"
-    },
-    {
         name: "Хортиця",
         description: "айс, срібна, платинум, преміум",
         weight: "100",
-        price: "34"
+        price: "40"
     },
     {
         name: "Перша Гільдія",
-        description: "знатна, поважна",
+        description: "класична, поважна, знатна",
         weight: "100",
-        price: "36"
+        price: "40"
     },
     {
-        name: "United Stars",
+        name: "Хлібна сльоза",
         weight: "100",
-        price: "35"
-    },
-    {
-        name: "Президентський стандарт",
-        weight: "100",
-        price: "42"
+        price: "40"
     },
     {
         name: "Absolutl",
         weight: "100",
-        price: "67"
+        price: "100"
     },
     {
         name: "Absolut",        
-        description: "Kurant/Citron",
+        description: "Кавун, Лайм, Манго",
         weight: "100",
-        price: "69"
+        price: "100"
     },
     {
         name: "Grey Goose",      
@@ -1189,40 +1347,69 @@ const menuTequila = [
     {
         name: "Olmeca Blanco",
         weight: "100",
-        price: "117"
+        price: "190"
     },
     {
         name: "Olmeca Gold",
         weight: "100",
-        price: "113"
+        price: "190"
+    },
+    {
+        name: "Olmeca Silver",
+        weight: "100",
+        price: "190"
+    },
+    {
+        name: "Сан Хосе Сільвер",
+        weight: "100",
+        price: "110"
     }
 ];
 //Пиво
 const menuBeer = [
     {
         name: "Стелла Артуа",
-        weight: "1 пл.",
-        price: "50"
+        weight: "0.5 жб/пл.",
+        price: "80"
+    }, {
+        name: "Стелла Артуа б/а",
+        weight: "0.33 жб",
+        price: "55"
+    },
+    {
+        name: "Стелла Артуа",
+        weight: "розливне",
+        price: "70"
     },
     {
         name: "Корона",
-        weight: "1 пл.",
-        price: "58"
+        weight: "0.33 1 пл.",
+        price: "90"
     },
     {
         name: "Льофф блонд",
-        weight: "1 пл.",
-        price: "75"
+        weight: "0.33 1 пл.",
+        price: "95"
     },
     {
         name: "Левінбрау",
-        weight: "1 пл.",
-        price: "75"
+        weight: "0.33 1 пл.",
+        price: "95"
+    },
+    {
+        name: "Левінбрау",
+        weight: "розливне",
+        price: "70"
     },
     {
         name: "Хугарден Вайт",
-        weight: "1 пл.",
-        price: "75"
+        weight: "0.5 пл.",
+        price: "100"
+    },
+    {
+        name: "Хугарден Вайт",
+        weight: "0.33 жб.",
+        price: "120"
     }
 ];
 
