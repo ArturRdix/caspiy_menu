@@ -2,57 +2,68 @@
 const menuIceSnackItems = [
     {
         name: "Свіжі овочі та зелень",
-        weight: "550",
-        price: "100"
+        weight: "350",
+        price: "120"
     },
     {
         name: "Асорті соління",
         weight: "350",
-        price: "120"
+        price: "200"
     },
     {
         name: "Капрезе",
         description: "помідор, моцарелла, базилік, соус «Песто»",
         weight: "350",
-        price: "160"
+        price: "200"
     },
     {
         name: "Рулетики з баклажанів",
-        description: "смажені баклажани з начинкою з волоського горіха, соусу та часнику",
+        description: "смажені баклажани з начинкою з волоського горіха, соусом та часником",
         weight: "200",
-        price: "140"
+        price: "180"
+    },
+    {
+        name: "Рулетики з кабачків",
+        weight: "200",
+        price: "180"
     },
     {
         name: "Сирне плато",
-        description: "сири: пармезан, дор-блю, брі, моцарелла, радомер, мед, м’ята, виноград, волоський горіх",
+        description: "сири: пармезан, дор-блю, брі, моцарелла, радомер, мед, м'ята, виноград, волоський горіх",
         weight: "500",
-        price: "500"
+        price: "550"
     },
     {
         name: "Оселедець з картоплею",
         weight: "350",
-        price: "100"
+        price: "180"
+    },
+    {
+        name: "Рибне асорті",
+        description: "сьомга с/с, сьомга х/к, масляна х/к, вугор смажений",
+        weight: "400",
+        price: "750"
     },
     {
         name: "Тартар із лосося",
         weight: "250",
-        price: "230"
+        price: "350"
     },
     {
         name: "Тартар із телятини",
         weight: "250",
-        price: "190"
+        price: "300"
     },
     {
         name: "Тарілка домашнього сала",
         description: "сало солене, сало запечене, сало копчене, грінки, хрін",
-        weight: "150/80",
-        price: "150"
+        weight: "230",
+        price: "250"
     },
     {
         name: "Бастурма",
         weight: "100",
-        price: "80"
+        price: "150"
     }
 ];
 
@@ -60,24 +71,34 @@ const menuIceSnackItems = [
 const menuHotSnackItems = [
     {
         name: "Сулугуні в сухарях панко з солодко-гострим соусом",
-        weight: "150/50",
-        price: "100"
+        weight: "200",
+        price: "200"
+    },
+    {
+        name: "Хачапурі по-аджарські",
+        weight: "500",
+        price: "220"
     },
     {
         name: "Кутаби з бараниною/телятиною",
         weight: "180",
-        price: "90"
+        price: "150"
     },
     {
         name: "Кутаби з зеленню та сиром",
         weight: "180",
-        price: "90"
+        price: "150"
     },
     {
         name: "Долма",
         description: "баранина, рис, цибуля, зелень у виноградному листі, соус",
-        weight: "200/50",
-        price: "250"
+        weight: "250",
+        price: "300"
+    },
+    {
+        name: "Кіш з лососем",
+        weight: "1 шт",
+        price: "80"
     }
 ];
 
@@ -87,48 +108,57 @@ const menuSalatItems = [
         name: "«Чабан»",
         description: "помідор, огірок, болгарський перець, цибуля, зелень, оливкова олія",
         weight: "250",
-        price: "80"
+        price: "140"
     },
     {
         name: "«Грецький»",
         description: "помідор, огірок, болгарський перець, сир фета, маслини, мікс салат, оливкова олія",
         weight: "250",
-        price: "110"
+        price: "150"
     },
     {
-        name: "Теплий салат із овочів",
+        name: "Теплий овочевий",
         description: "баклажан, помідор чері, болгарський перець, печериці, стебло селери, мікс салат, кунжутна олія",
         weight: "250",
-        price: "120"
+        price: "150"
     },
     {
-        name: "«Цезар» класичний",
+        name: "«Цезар» з куркою",
         description: "куряче філе, бекон, салат айсберг, помідор чері, пармезан, сухарі, соус «Цезар»",
         weight: "250",
-        price: "140"
+        price: "200"
     },
     {
         name: "«Цезар» з лососем і креветками",
         weight: "350",
-        price: "280"
+        price: "350"
     },
     {
-        name: "Салат з лососем",
-        description: "лосось с/с, сир філадельфія, апельсин, мікс салат, лимонний сік, оливкова олія",
-        weight: "250",
-        price: "190"
-    },
-    {
-        name: "Теплий салат з телятиною",
+        name: "Теплий з телятиною",
         description: "філе телятини, помідор чері, мікс салат, соус",
         weight: "250",
-        price: "190"
+        price: "280"
     },
     {
         name: "«Каспій»",
         description: "лосось, сібас, креветки, мідії, авокадо, мікс салат, оливкова олія",
         weight: "250",
-        price: "300"
+        price: "380"
+    },
+    {
+        name: "Груша і хамон",
+        weight: "250",
+        price: "280"
+    },
+    {
+        name: "Креветки та авокадо",
+        weight: "250",
+        price: "330"
+    },
+    {
+        name: "«Мітла»",
+        weight: "200",
+        price: "100"
     },
 
 ];
@@ -136,153 +166,56 @@ const menuSalatItems = [
 //Основні страви
 const menuMainDishes = [
     {
-        name: "Сібас із креветками",
-        weight: "200/150",
-        price: "310"
+        name: "Сібас з креветками у персиковому соусі",
+        weight: "350",
+        price: "420"
     },
     {
         name: "Лосось з овочами у вершковому соусі",
-        weight: "180/170",
-        price: "320"
+        weight: "350",
+        price: "450"
     },
     {
         name: "Курча «Чкмерулі»",
         description: "курча запечене у вершковому соусі",
-        weight: "1 шт.",
-        price: "280"
-    },
-    {
-        name: "Качка з овочами",
-        weight: "150/200",
-        price: "290"
-    },
-    {
-        name: "Стейк із курятини",
-        weight: "100",
-        price: "80"
-    },
-    {
-        name: "Качина грудка під ягідним соусом",
-        weight: "250/100",
-        price: "400"
-    },
-    {
-        name: "Стейк «Нью-Йорк»",
-        weight: "100",
-        price: "140"
-    },
-    {
-        name: "Стейк «Рібай»",
-        weight: "100",
-        price: "150"
-    },
-    {
-        name: "Стейк зі свинини",
-        weight: "100",
-        price: "100"
-    },
-    {
-        name: "Медальйони з телятини в беконі на подушці з картопляного пюре",
-        weight: "200/150",
+        weight: "500",
         price: "350"
     },
     {
-        name: "Садж з рибою",
-        description: "річкова риба, помідор, болгарський перець, печериці",
-        weight: "800",
-        price: "320"
+        name: "Качина грудка під ягідним соусом",
+        weight: "350",
+        price: "500"
+    },
+    {
+        name: "Медальйони з телятини в беконі на подушці з картопляного пюре",
+        weight: "350",
+        price: "500"
     },
     {
         name: "Садж з бараниною/телятиною",
         description: "баранина/телятина, болгарський перець, помідор, баклажан, картопля, печериці, цибуля, вершкове масло",
         weight: "900",
-        price: "350"
+        price: "450"
     },
-];
-
-//Страви на грилі
-const menuGrillDishes = [
     {
-        name: "Каре ягняти",
+        name: "Стейк з курятини",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Стейк зі свинини",
         weight: "100",
         price: "120"
     },
     {
-        name: "Чалагач зі свинини",
+        name: "Стейк «Нью-Йорк»",
         weight: "100",
-        price: "80"
-    },
-    {
-        name: "Шашлик зі свинячого ошийка",
-        weight: "100",
-        price: "75"
-    },
-    {
-        name: "Шашлик із телятини",
-        weight: "100",
-        price: "90"
-    },
-    {
-        name: "Шашлик із баранини",
-        weight: "100",
-        price: "70"
-    },
-    {
-        name: "Шашлик із домашньої курки",
-        weight: "100",
-        price: "70"
-    },
-    {
-        name: "Шашлик із сьомги із свіжими овочами",
-        weight: "200/100",
-        price: "280"
-    },
-    {
-        name: "Сом на мангалі з гранатовим соусом",
-        weight: "200/50",
         price: "150"
     },
     {
-        name: "Креветки на мангалі з соусом «солодкий чилі»",
-        weight: "200/50",
-        price: "200"
-    },
-    {
-        name: "Люля-кебаб із телятини",
+        name: "Стейк «Рібай»",
         weight: "100",
-        price: "90"
-    },
-    {
-        name: "Люля-кебаб із баранини",
-        weight: "100",
-        price: "90"
-    },
-    {
-        name: "Перепілка",
-        weight: "1 шт.",
-        price: "100"
-    },
-    {
-        name: "Туюк в тандирі",
-        description: "курча запечене в тандирі",
-        weight: "1 шт.",
-        price: "190"
-    },
-    {
-        name: "Шашлик овочевий",
-        description: "картопля, помідор, баклажан, болгарський перець",
-        weight: "500",
-        price: "200"
-    },
-    {
-        name: "Ребра свині у східному соусі",
-        weight: "100",
-        price: "70"
-    },
-    {
-        name: "Печериці з сиром",
-        weight: "100",
-        price: "50"
+        price: "160"
     },
 ];
 
@@ -292,123 +225,249 @@ const menuFirstDishes = [
         name: "Бульйон із домашньої курки",
         description: "м'ясо домашньої курки, морква, цибуля, зелень",
         weight: "300",
-        price: "60"
+        price: "120"
     },
     {
         name: "Дюшбара",
         description: "бульйон з бараниною, нут, цибуля, алича, шафран",
         weight: "400",
-        price: "80"
+        price: "130"
     },
     {
         name: "Піті",
         description: "бульйон з бараниною, нут, цибуля, алича, шафран",
         weight: "300",
-        price: "110"
+        price: "150"
     },
     {
         name: "Кюфта бозбаш",
         description: "тефтеля з баранини, картопля, нут, алича, м'ята",
         weight: "400",
-        price: "120"
+        price: "160"
     },
     {
         name: "Ґаспачо",
         description: "томати, болгарський перець, зелень, цибуля, рукола",
         weight: "300",
-        price: "100"
+        price: "150"
     },
     {
         name: "Крем-суп з печериць",
         description: "печериці, цибуля, вершки, спеції, тости",
         weight: "300",
-        price: "100"
+        price: "150"
     },
     {
         name: "Крем-суп зі шпинату",
         description: "шпинат, цибуля, вершки, спеції, тости",
         weight: "300",
-        price: "110"
+        price: "150"
     },
     {
         name: "Уха царська",
         description: "із червоної і білої риби",
         weight: "300",
+        price: "250"
+    },
+];
+
+
+//Страви на грилі
+const menuGrillDishes = [
+    {
+        name: "Шашлик із сьомги із свіжими овочами",
+        weight: "300",
+        price: "400"
+    },
+    {
+        name: "Сом на мангалі з гранатовим соусом",
+        weight: "250",
+        price: "350"
+    },
+    {
+        name: "Креветки на мангалі з соусом «солодкий чилі»",
+        weight: "250",
+        price: "350"
+    },
+    {
+        name: "Перепілка",
+        weight: "1 шт.",
+        price: "200"
+    },
+    {
+        name: "Шашлик із домашнього кролика",
+        weight: "100",
+        price: "120"
+    },
+    {
+        name: "Шашлик із домашньої курки",
+        weight: "100",
+        price: "90"
+    },
+    {
+        name: "Каре ягняти",
+        weight: "100",
         price: "150"
+    },
+    {
+        name: "Шашлик із баранини",
+        weight: "100",
+        price: "90"
+    },
+    {
+        name: "Шашлик із баранини на  кістці",
+        weight: "100",
+        price: "70"
+    },
+    {
+        name: "Шашлик із телятини",
+        weight: "100",
+        price: "120"
+    },
+    {
+        name: "Шашлик зі свинячого ошийка",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Чалагач зі свинини",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Свинячі ребра у східному соусі",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Люля-кебаб із телятини",
+        weight: "100",
+        price: "120"
+    },
+    {
+        name: "Люля-кебаб із баранини",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Шашлик овочевий",
+        description: "помідор, баклажан, болгарський перець, кабачок, гриби",
+        weight: "500",
+        price: "250"
+    },
+    {
+        name: "Печериці з сиром",
+        weight: "100",
+        price: "70"
     },
 ];
 
 //Гарніри
 const menuGarnier = [
     {
-        name: "Картопля по-селянськи",
-        weight: "150",
-        price: "50"
+        name: "Картопляні трикутники",
+        weight: "100",
+        price: "100"
     },
     {
         name: "Картопля фрі",
         weight: "150",
-        price: "40"
+        price: "100"
+    },
+    {
+        name: "Картопля по-селянськи",
+        weight: "150",
+        price: "100"
     },
     {
         name: "Картопля запечена з салом",
         weight: "200",
-        price: "60"
+        price: "150"
     },
 ];
 const menuSouse = [
     {
         name: "Аджика",
         weight: "100",
-        price: "30"
+        price: "50"
     },
     {
         name: "Мацоні",
         weight: "100",
-        price: "30"
+        price: "50"
     },
     {
         name: "Нашарап",
         weight: "100",
-        price: "40"
+        price: "50"
     },
     {
         name: "Томатний",
         weight: "100",
-        price: "30"
+        price: "50"
     },
     {
         name: "Ягідно-гострий",
         weight: "100",
-        price: "40"
+        price: "50"
     },
     {
         name: "Вершковий",
         weight: "100",
-        price: "40"
+        price: "50"
     },
 ];
-const menuBread = [
+
+//Паста
+const menuPasta = [
     {
-        name: "Хліб",
-        description: "білий / чорний",
-        weight: "1 шт.",
-        price: "3"
+        name: "Паста Карбонара",
+        weight: "250",
+        price: "180"
     },
     {
-        name: "Лаваш тонкий",
-        weight: "1 шт.",
-        price: "5"
+        name: "Паста з куркою і грибами",
+        weight: "250",
+        price: "200"
     },
     {
-        name: "Грісіні",
-        weight: "1 шт.",
-        price: "5"
+        name: "Паста з креветками і томатним соусом",
+        weight: "350",
+        price: "250"
+    },
+];
+
+//Піца
+const menuPizza = [
+    {
+        name: "Маргарита",
+        weight: "600",
+        price: "200"
+    },
+    {
+        name: "Курка, гриби",
+        weight: "600",
+        price: "250"
+    },
+    {
+        name: "Шинка, бекон",
+        weight: "600",
+        price: "250"
+    },
+    {
+        name: "Лосось, сир филадельфія",
+        weight: "600",
+        price: "400"
+    },
+    {
+        name: "Лосось, масляна",
+        weight: "500",
+        price: "400"
     },
     {
         name: "Фокачча з сиром",
-        weight: "1 шт.",
-        price: "80"
+        weight: "400",
+        price: "150"
     },
 ];
 
@@ -417,52 +476,62 @@ const menuDesert = [
     {
         name: "Пахлава Бакинська",
         weight: "100",
-        price: "80"
+        price: "120"
     },
     {
         name: "Панна котта",
         weight: "150",
-        price: "80"
+        price: "120"
     },
     {
         name: "Сирники зі сметаною",
-        weight: "150/50",
-        price: "80"
+        weight: "200",
+        price: "150"
     },
     {
         name: "Чізкейк «Нью-Йорк»",
         weight: "230",
-        price: "120"
+        price: "150"
     },
     {
         name: "Штрудель з яблуками та морозивом",
-        weight: "120/100",
-        price: "100"
+        weight: "220",
+        price: "150"
     },
     {
         name: "Наполеон",
         weight: "200",
-        price: "100"
+        price: "150"
     },
     {
         name: "Шоколадний фондан",
-        weight: "120/100",
+        weight: "320",
+        price: "150"
+    },
+    {
+        name: "Меренговий рулет",
+        weight: "100",
         price: "120"
     },
     {
         name: "Морозиво з джемом",
-        weight: "100/30",
-        price: "50"
+        weight: "130",
+        price: "100"
     },
     {
         name: "Морозиво з фруктами",
-        weight: "100/30",
-        price: "50"
+        weight: "130",
+        price: "100"
     },
     {
         name: "Морозиво з шоколадом",
-        weight: "100/30",
-        price: "50"
+        weight: "130",
+        price: "100"
+    },
+    {
+        name: "Сорбет манго",
+        weight: "105",
+        price: "150"
     },
 ];
 
@@ -489,29 +558,9 @@ const menuCoffee = [
         price: "40"
     },
     {
-        name: "Еспресо допіо",
-        weight: "60",
-        price: "35"
-    },
-    {
-        name: "Еспресо кон-панна",
-        weight: "40",
-        price: "35"
-    },
-    {
-        name: "Еспресо макіято",
-        weight: "30",
-        price: "35"
-    },
-    {
         name: "Еспресо ристрето",
         weight: "15",
         price: "40"
-    },
-    {
-        name: "Еспресо актив",
-        weight: "45",
-        price: "35"
     },
     {
         name: "Кава по-віденськи",
@@ -556,34 +605,14 @@ const menuCoffee = [
 ];
 const menuTea = [
     {
-        name: "По-східному",
+        name: "Чай по-східному",
         weight: "180",
         price: "50"
     },
     {
-        name: "Чорний / зелений",
+        name: "Чай в асортименті",
         weight: "500",
         price: "60"
-    },
-    {
-        name: "Трав'яний / фруктовий",
-        weight: "500",
-        price: "40"
-    },
-    {
-        name: "Чорний з бергамотом",
-        weight: "500",
-        price: "40"
-    },
-    {
-        name: "Зелений саусеп",
-        weight: "500",
-        price: "40"
-    },
-    {
-        name: "Зелений із жасмином",
-        weight: "500",
-        price: "40"
     },
     {
         name: "Чай фірмовий",
@@ -597,35 +626,52 @@ const menuTea = [
 const menuIceDrink = [
     {
         name: "Вода Borjomi",
-        weight: "0,5 л",
-        price: "100"
-    },
-    {
-        name: "Вода Borjomi",
         weight: "0,33 л",
+        description: "скло",
         price: "70"
     },
     {
-        name: "Вода Моршинська",
-        description: "н/г, с/г",
+        name: "Вода Borjomi",
         weight: "0,5 л",
-        price: "50"
+        description: "скло",
+        price: "100"
+    },
+    {
+        name: "Вода Саірме",
+        description: "газована/ не газована",
+        weight: "0,5 л",
+        price: "90"
+    },
+    {
+        name: "Вода Набіглаві",
+        weight: "0,5 л",
+        price: "90"
     },
     {
         name: "Вода Моршинська",
-        description: "н/г, с/г",
         weight: "0,33 л",
         price: "50"
     },
     {
-        name: "Coca-Cola, Fanta, Sprite,Pepsi",
-        weight: "жб 0,33 л",
-        price: "40"
+        name: "Вода Моршинська",
+        weight: "0,5 л",
+        price: "50"
     },
     {
-        name: "Coca-Cola, Fanta, Sprite,Pepsi",
-        weight: "скло 0,25 л",
+        name: "Натахтарі",
+        description: "скло",
+        weight: "0,5 л",
+        price: "90"
+    },
+    {
+        name: "Coca-Cola, Fanta, Sprite, Pepsi",
+        weight: "пл. 0,25 л",
         price: "50"
+    },
+    {
+        name: "Coca-Cola, Fanta, Sprite, Pepsi",
+        weight: "банка 0,33 л",
+        price: "40"
     },
     {
         name: "Сік «Сандора»",
@@ -644,15 +690,9 @@ const menuIceDrink = [
     },
     {
         name: "Фреш",
-        description: "на вибір: яблуко / селера / грейпфрут / морква / апельсин",
+        description: "яблуко / селера / грейпфрут / морква / апельсин",
         weight: "300",
         price: "140"
-    },
-    {
-        name: "Смузі",
-        description: "ягідний",
-        weight: "70",
-        price: "150"
     },
 ];
 const menuZeroCocktail = [
@@ -660,21 +700,6 @@ const menuZeroCocktail = [
         name: "Молочний коктейль",
         weight: "270",
         price: "100"
-    },
-    {
-        name: "Оригінальний лимонад",
-        weight: "450",
-        price: "100"
-    },
-    {
-        name: "Мохіто",
-        weight: "400",
-        price: "120"
-    },
-    {
-        name: "Тропічний сік",
-        weight: "450",
-        price: "80"
     },
     {
         name: "Том і Джері",
@@ -690,7 +715,22 @@ const menuZeroCocktail = [
         name: "Смузі ягідний ",
         weight: "400",
         price: "120"
-    }
+    },
+    {
+        name: "Тропічний сік",
+        weight: "450",
+        price: "80"
+    },
+    {
+        name: "Оригінальний лимонад",
+        weight: "450",
+        price: "100"
+    },
+    {
+        name: "Мохіто",
+        weight: "400",
+        price: "120"
+    },
 ];
 
 //Дитяче меню
@@ -698,48 +738,43 @@ const menuKids = [
     {
         name: "Картопляне пюре",
         weight: "200",
-        price: "35"
+        price: "60"
     },
     {
         name: "Каша гречана",
         weight: "150",
-        price: "25"
+        price: "60"
     },
     {
         name: "Каша рисова",
         weight: "200",
-        price: "30"
+        price: "60"
     },
     {
         name: "Пене",
         description: "макарони з курочкою у вершках",
         weight: "200",
-        price: "60"
+        price: "100"
     },
     {
         name: "Курячі парові котлетки",
         weight: "100",
-        price: "55"
+        price: "90"
     },
     {
         name: "Парові котлетки з телятини",
         weight: "100",
-        price: "60"
-    },
-    {
-        name: "Рибні парові котлетки",
-        weight: "100",
-        price: "70"
+        price: "100"
     },
     {
         name: "Шашличок з курочки",
         weight: "100",
-        price: "60"
+        price: "90"
     },
     {
         name: "Нагетси",
         weight: "150",
-        price: "70"
+        price: "120"
     },
 ];
 //Алкогольні коктейлі
@@ -763,41 +798,6 @@ const menuAlcoCockt = [
         price: "160"
     },
     {
-        name: "Маргарита Динна",
-        description: "текіла, лікер, лимонний сік, лайм",
-        weight: "0,150",
-        price: "200"
-    },
-    {
-        name: "Секс на пляжі",
-        description: "горілка, лікери, апельсиновий сік, морс",
-        weight: "0,300",
-        price: "190"
-    },
-    {
-        name: "Сієста",
-        description: "текіла, лікер, лимонний сік",
-        weight: "0,150",
-        price: "190"
-    },
-    {
-        name: "Сік джунглів",
-        description: "джин, лікер, лимонний сік, апельсиновий сік",
-        weight: "0,250",
-        price: "180"
-    },
-    {
-        name: "Мохіто",
-        description: "ром, тростинний сироп, спрайт, лайм, м’ята",
-        weight: "0,400",
-        price: "180"
-    },
-    {
-        name: "Джин з тоніком",
-        weight: "0,250",
-        price: "150"
-    },
-    {
         name: "Віскі-кола",
         weight: "0,250",
         price: "150"
@@ -807,6 +807,41 @@ const menuAlcoCockt = [
         description: "ром, кола",
         weight: "0,250",
         price: "150"
+    },
+    {
+        name: "Джин з тоніком",
+        weight: "0,250",
+        price: "150"
+    },
+    {
+        name: "Маргарита Динна",
+        description: "текіла, лікер, лимонний сік, лайм",
+        weight: "0,150",
+        price: "200"
+    },
+    {
+        name: "Мохіто",
+        description: "ром, тростинний сироп, спрайт, лайм, м’ята",
+        weight: "0,400",
+        price: "180"
+    },
+    {
+        name: "Секс на пляжі",
+        description: "горілка, лікери, апельсиновий сік, морс",
+        weight: "0,300",
+        price: "190"
+    },
+    {
+        name: "Сік джунглів",
+        description: "джин, лікер, лимонний сік, апельсиновий сік",
+        weight: "0,250",
+        price: "180"
+    },
+    {
+        name: "Сієста",
+        description: "текіла, лікер, лимонний сік",
+        weight: "0,150",
+        price: "190"
     },
     {
         name: "Б-52",
@@ -824,8 +859,14 @@ const menuAlcoCockt = [
 //Ігристі вина
 const menuFizzyVine = [
     {
-        name: "Fragolino Sarsitano",
-        description: "Rosso біле/Bianco солодке, (Італія)",
+        name: "Fragolino Sarsitano Rosso",
+        description: "біле, (Італія)",
+        weight: "1 пл.",
+        price: "250"
+    },
+    {
+        name: "Fragolino Sarsitano Bianco",
+        description: "солодке, (Італія)",
         weight: "1 пл.",
         price: "250"
     },
@@ -837,9 +878,13 @@ const menuFizzyVine = [
     },
     {
         name: "Французький бульвар",
-        description: " «Special Edition» напівсухе, напівсололке, солодке",
         weight: "1 пл.",
         price: "250"
+    },
+    {
+        name: "Мартіні Просекко/Асті",
+        weight: "1 пл.",
+        price: "750"
     },
     {
         name: "CAVA Palau",
@@ -848,16 +893,10 @@ const menuFizzyVine = [
         price: "500"
     },
     {
-        name: "Рокка Россо Просекко",
+        name: "Docs 8 Asti",
         description: "(Італія)",
         weight: "1 пл.",
-        price: "600"
-    },
-    {
-        name: "Santa Chiara Просекко",
-        description: "(Італія)",
-        weight: "1 пл.",
-        price: "600"
+        price: "500"
     },
     {
         name: "Contessa Chiara Асті",
@@ -866,16 +905,17 @@ const menuFizzyVine = [
         price: "550"
     },
     {
-        name: "Docs 8 Asti",
+        name: "Santa Chiara Просекко",
         description: "(Італія)",
         weight: "1 пл.",
-        price: "500"
+        price: "600"
     },
     {
-        name: "Мартіні Просекко/Асті",
+        name: "Рокка Россо Просекко",
+        description: "(Італія)",
         weight: "1 пл.",
-        price: "750"
-    }
+        price: "600"
+    },
 ];
 //Вина білі
 const menuWhiteVine = [
@@ -904,16 +944,16 @@ const menuWhiteVine = [
         price: "50"
     },
     {
-        name: "Ріоджа Кастиліо",
-        description: "сухе/напівсолодке (Іспанія)",
-        weight: "100",
-        price: "60"
-    },
-    {
         name: "Піно Гріджио",
         description: "сухе (Італія)",
         weight: "100",
         price: "50"
+    },
+    {
+        name: "Ріоджа Кастиліо",
+        description: "сухе/напівсолодке (Іспанія)",
+        weight: "100",
+        price: "60"
     },
     {
         name: "Верментіно Монталто",
@@ -988,19 +1028,13 @@ const menuRedVine = [
         price: "60"
     },
     {
-        name: "Мукузані",
-        description: "сухе (Грузія)",
-        weight: "100",
-        price: "60"
-    },
-    {
         name: "Кінзмараулі",
         description: "напівсолодке (Грузія)",
         weight: "100",
         price: "60"
     },
     {
-        name: "Кінзмараулі",
+        name: "Хванчкара",
         description: "напівсолодке (Грузія)",
         weight: "100",
         price: "140"
@@ -1011,12 +1045,12 @@ const menuRedVine = [
 //Вермути
 const menuVermut = [
     {
-        name: "Мартіні Россо",
+        name: "Мартіні Россо Фіеро",
         weight: "100",
         price: "60"
     },
     {
-        name: "Мартіні Россо Фіеро",
+        name: "Мартіні Россо",
         weight: "100",
         price: "60"
     },
@@ -1054,7 +1088,7 @@ const menuLicker = [
         price: "220"
     },
     {
-        name: "Лімончелло",
+        name: "Абсент",
         weight: "100",
         price: "200"
     },
@@ -1069,22 +1103,22 @@ const menuRome = [
     {
         name: "Bacardi Carta Blanca",
         weight: "100",
-        price: "80"
+        price: "140"
     },
     {
         name: "Bacardi Carta Negra",
         weight: "100",
-        price: "81"
+        price: "140"
     },
     {
         name: "Bacardi Carta Spiced",
         weight: "100",
-        price: "81"
+        price: "120"
     },
     {
-        name: "Bacardi Oakheart Original",
+        name: "Bacardi Oakheart Original 35%",
         weight: "100",
-        price: "81"
+        price: "100"
     },
     {
         name: "Captain Morgan Black",
@@ -1115,8 +1149,12 @@ const menuJin = [
         price: "120"
     },
     {
-        name: "Beefeater",
-        description: "Blood Orange/Pink",
+        name: "Beefeater Blood Orange",
+        weight: "100",
+        price: "120"
+    },
+    {
+        name: "Beefeater Blood Pink",
         weight: "100",
         price: "120"
     },
@@ -1135,14 +1173,14 @@ const menuJin = [
 //Віскі
 const menuWhiskey = [
     {
-        name: "Jameson",
-        weight: "100",
-        price: "180"
-    },
-    {
         name: "Джек Деніелс",
         weight: "100",
         price: "210"
+    },
+    {
+        name: "Jameson",
+        weight: "100",
+        price: "180"
     },
     {
         name: "Блек+Вайт",
@@ -1150,7 +1188,7 @@ const menuWhiskey = [
         price: "100"
     },
     {
-        name: "Беллс",
+        name: "Беллс Оріджінал",
         weight: "100",
         price: "100"
     },
@@ -1170,12 +1208,12 @@ const menuWhiskey = [
         price: "150"
     },
     {
-        name: "Ballantine`s",
+        name: "Ballantine`s Finest",
         weight: "100",
         price: "150"
     },
     {
-        name: "O`Brian",
+        name: "Ірланд.віскі O`Brian",
         weight: "100",
         price: "150"
     },
@@ -1186,7 +1224,7 @@ const menuWhiskey = [
         price: "360"
     },
     {
-        name: "Chivas Regal",        
+        name: "Chivas Regal",
         description: "18 років",
         weight: "100",
         price: "600"
@@ -1195,94 +1233,82 @@ const menuWhiskey = [
 //Коньяк/Бренді
 const menuBrandi = [
     {
-        name: "АрАрАт",
+        name: "Бренді АрАрАт",
         description: "3★",
         weight: "100",
         price: "150"
     },
     {
-        name: "АрАрАт",
+        name: "Бренді АрАрАт",
         description: "5★",
         weight: "100",
         price: "190"
     },
     {
-        name: "Ужгород",
+        name: "Бренді Orbeliani",
         description: "3★",
         weight: "100",
         price: "80"
     },
     {
-        name: "Orbeliani",
-        description: "3★",
-        weight: "100",
-        price: "80"
-    },
-    {
-        name: "Orbeliani",
+        name: "Бренді Orbeliani",
         description: "4★",
         weight: "100",
         price: "80"
     },
     {
-        name: "Orbeliani",
+        name: "Бренді Orbeliani",
         description: "5★",
         weight: "100",
         price: "90"
     },
     {
-        name: "Аракс",
+        name: "Коньяк Аракс",
         description: "3★",
         weight: "100",
         price: "60"
     },
     {
-        name: "Аракс",
+        name: "Коньяк Аракс",
         description: "5★",
         weight: "100",
-        price: "90"
+        price: "70"
     },
     {
-        name: "Легенда Вірменії",
+        name: "Коньяк Легенда Вірменії",
         description: "3★",
         weight: "100",
         price: "70"
     },
     {
-        name: "Легенда Вірменії",
-        description: "5★",
+        name: "Коньяк Легенда Вірменії",
+        description: "4★",
         weight: "100",
         price: "90"
     },
     {
-        name: "Легенда Вірменії",
+        name: "Коньяк Легенда Вірменії",
         description: "10★",
         weight: "100",
         price: "140"
     },
     {
-        name: "Колхида",
+        name: "Коньяк Колхида",
         description: "3★",
         weight: "100",
         price: "70"
     },
     {
-        name: "Колхида",
+        name: "Коньяк Колхида",
         description: "5★",
         weight: "100",
         price: "80"
     },
     {
-        name: "Алекс",
+        name: "Закарпатський «Ужгород»",
         description: "3★",
         weight: "100",
-        price: "100"
-    },
-    {
-        name: "Алекс",
-        description: "5★",
-        weight: "100",
-        price: "110"
+        price: "80"
     },
     {
         name: "Martell VS",
@@ -1309,6 +1335,22 @@ const menuBrandi = [
 //Горліка
 const menuVodka = [
     {
+        name: "Absolutl",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Absolut",
+        description: "Кавун, Лайм, Манго",
+        weight: "100",
+        price: "100"
+    },
+    {
+        name: "Grey Goose",
+        weight: "100",
+        price: "150"
+    },
+    {
         name: "Хортиця",
         description: "айс, срібна, платинум, преміум",
         weight: "100",
@@ -1325,22 +1367,6 @@ const menuVodka = [
         weight: "100",
         price: "40"
     },
-    {
-        name: "Absolutl",
-        weight: "100",
-        price: "100"
-    },
-    {
-        name: "Absolut",        
-        description: "Кавун, Лайм, Манго",
-        weight: "100",
-        price: "100"
-    },
-    {
-        name: "Grey Goose",      
-        weight: "100",
-        price: "150"
-    }
 ];
 //Текіла
 const menuTequila = [
@@ -1368,23 +1394,19 @@ const menuTequila = [
 //Пиво
 const menuBeer = [
     {
-        name: "Стелла Артуа",
-        weight: "0.5 жб/пл.",
-        price: "80"
-    }, {
-        name: "Стелла Артуа б/а",
-        weight: "0.33 жб",
-        price: "55"
-    },
-    {
-        name: "Стелла Артуа",
-        weight: "розливне",
-        price: "70"
-    },
-    {
         name: "Корона",
+        weight: "0.35 1 пл.",
+        price: "95"
+    },
+    {
+        name: "Левінбрау",
         weight: "0.33 1 пл.",
-        price: "90"
+        price: "95"
+    },
+    {
+        name: "Левінбрау",
+        weight: "0.5 розливне",
+        price: "70"
     },
     {
         name: "Льофф блонд",
@@ -1392,25 +1414,35 @@ const menuBeer = [
         price: "95"
     },
     {
-        name: "Левінбрау",
-        weight: "0.33 1 пл.",
-        price: "95"
+        name: "Стелла Артуа",
+        weight: "0.5 жб.",
+        price: "80"
     },
     {
-        name: "Левінбрау",
-        weight: "розливне",
+        name: "Стелла Артуа",
+        weight: "0.5 пл.",
+        price: "80"
+    },
+    {
+        name: "Стелла Артуа б/а",
+        weight: "0.33 жб",
+        price: "55"
+    },
+    {
+        name: "Стелла Артуа",
+        weight: "0.5 розливне",
         price: "70"
     },
     {
         name: "Хугарден Вайт",
-        weight: "0.5 пл.",
+        weight: "0.33 жб.",
         price: "100"
     },
     {
         name: "Хугарден Вайт",
-        weight: "0.33 жб.",
+        weight: "0.5 пл.",
         price: "120"
-    }
+    },
 ];
 
 //Кальяни
@@ -1453,7 +1485,7 @@ const menuFruitDop = [
 
 //Інше
 //Бій посуду
-const menuOter=[
+const menuOter = [
     {
         name: "Келихи",
         description: "за 1 шт.",

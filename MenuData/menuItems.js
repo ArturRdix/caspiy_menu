@@ -7,7 +7,6 @@ const menuItems = {
     "FirstDishes": menuFirstDishes,
     "Garnier": menuGarnier,
     "Souse": menuSouse,
-    "Bread": menuBread,
     "Deserts": menuDesert,
     "Coffee": menuCoffee,
     "Tea": menuTea,
@@ -31,5 +30,7 @@ const menuItems = {
     "Hookah": menuHookah,
     "OtherHookah": menuOtherHookah,
     "FruitDop": menuFruitDop,
-    "Oter":menuOter
+    "Oter": menuOter,
+    "Pasta": menuPasta,
+    "Pizza": menuPizza,
 };
